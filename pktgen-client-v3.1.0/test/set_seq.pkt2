@@ -1,0 +1,10 @@
+# seq <seq#> <portlist> dst-Mac src-Mac dst-IP src-IP/netmask sport dport ipv4|ipv6|vlan udp|tcp|icmp vid pktsize
+seq 0 all 00:0c:29:d4:7e:45 00:0c:29:09:0a:51 10.1.11.101 10.1.11.107/32 8083 80 ipv4 tcp 0 512
+set all seqCnt 1
+garp 0-1 enable
+garp 0-1 on
+process 0-1 enable
+process 0-1 on
+icmp.echo 0-1 enable
+set 0-1 count 1
+start 0-1

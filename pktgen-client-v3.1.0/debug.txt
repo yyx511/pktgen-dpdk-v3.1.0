@@ -1,0 +1,33 @@
+II 2017-01-06 16:20:49.202 [pktgen-main.c:426(main)] >>> Blacklisted port count 3
+II 2017-01-06 16:20:49.202 [pktgen-main.c:439(main)] >>> Packet Burst 128, RX Desc 1024, TX Desc 1024, mbufs/port 4096, mbuf cache 1024
+II 2017-01-06 16:20:49.202 [pktgen-port-cfg.c:338(pktgen_config_ports)] Configuring 1 ports, MBUF Size 1920, MBUF Cache Size 1024
+II 2017-01-06 16:20:49.202 [pktgen-port-cfg.c:416(pktgen_config_ports)] Initialize Port 0 -- TxQ 1, RxQ 1,  Src MAC a4:dc:be:18:75:b2
+II 2017-01-06 16:20:49.202 [pktgen-port-cfg.c:205(pktgen_mbuf_pool_create)]     Create: Default RX  0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 1581248 =   9737 KB
+II 2017-01-06 16:20:49.204 [pktgen-port-cfg.c:205(pktgen_mbuf_pool_create)]     Create: Resp TX     0:0  - Memory used (MBUFs 32768 x (size 1920 + Hdr 128)) + 1581248 =  67081 KB
+II 2017-01-06 16:20:49.213 [pktgen-port-cfg.c:445(pktgen_config_ports)] 
+II 2017-01-06 16:20:49.213 [pktgen-port-cfg.c:205(pktgen_mbuf_pool_create)]     Create: Default TX  0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 1581248 =   9737 KB
+II 2017-01-06 16:20:49.215 [pktgen-port-cfg.c:205(pktgen_mbuf_pool_create)]     Create: Range TX    0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 1581248 =   9737 KB
+II 2017-01-06 16:20:49.216 [pktgen-port-cfg.c:205(pktgen_mbuf_pool_create)]     Create: Req TX      0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 1581248 =   9737 KB
+II 2017-01-06 16:20:49.218 [pktgen-port-cfg.c:205(pktgen_mbuf_pool_create)]     Create: Sequence TX 0:0  - Memory used (MBUFs 4096 x (size 1920 + Hdr 128)) + 1581248 =   9737 KB
+II 2017-01-06 16:20:49.219 [pktgen-port-cfg.c:205(pktgen_mbuf_pool_create)]     Create: Special TX  0:0  - Memory used (MBUFs   64 x (size 1920 + Hdr 128)) + 1581248 =   1673 KB
+II 2017-01-06 16:20:49.220 [pktgen-port-cfg.c:493(pktgen_config_ports)] 
+II 2017-01-06 16:20:49.220 [pktgen-port-cfg.c:495(pktgen_config_ports)]                                                                        Port memory used = 117434 KB
+II 2017-01-06 16:20:49.220 [pktgen-port-cfg.c:497(pktgen_config_ports)]                                                                       Total memory used = 117434 KB
+II 2017-01-06 16:20:49.378 [pktgen-port-cfg.c:527(pktgen_config_ports)] Port  0: Link Up - speed 10000 Mbps - full-duplex
+II 2017-01-06 16:20:49.379 [pktgen-port-cfg.c:538(pktgen_config_ports)] 
+II 2017-01-06 16:20:49.379 [pktgen-main.c:448(main)] 
+II 2017-01-06 16:20:49.379 [pktgen-main.c:449(main)] === Display processing on lcore 0
+WW 2017-01-06 16:20:49.379 [pktgen.c:473(pktgen_has_work)] Nothing to do on lcore 2: exiting
+WW 2017-01-06 16:20:49.379 [pktgen.c:473(pktgen_has_work)] Nothing to do on lcore 3: exiting
+WW 2017-01-06 16:20:49.379 [pktgen.c:473(pktgen_has_work)] Nothing to do on lcore 5: exiting
+WW 2017-01-06 16:20:49.379 [pktgen.c:473(pktgen_has_work)] Nothing to do on lcore 5: exiting
+WW 2017-01-06 16:20:49.379 [pktgen.c:473(pktgen_has_work)] Nothing to do on lcore 6: exiting
+WW 2017-01-06 16:20:49.379 [pktgen.c:473(pktgen_has_work)] Nothing to do on lcore 7: exiting
+II 2017-01-06 16:20:49.456 [pktgen.c:1539(pktgen_main_rxtx_loop)] === RX/TX processing on lcore  1, rxcnt 1, txcnt 1, port/qid, 0/0
+II 2017-01-06 16:20:54.379 [commands.c:4340(pktgen_cmdline_start)] # *** Executing file (test/set_range_16.pkt)
+II 2017-01-06 16:20:54.393 [commands.c:4345(pktgen_cmdline_start)] # *** Done.
+II 2017-01-06 16:21:17.070 [pktgen.c:341(pktgen_send_burst)] snd:192.168.80.10:5122->40.1.1.26:80, flags:2, Type:800
+II 2017-01-06 16:21:17.070 [pktgen.c:341(pktgen_send_burst)] snd:192.168.80.10:5123->40.1.1.26:80, flags:2, Type:800
+II 2017-01-06 16:21:17.070 [pktgen.c:341(pktgen_send_burst)] snd:192.168.80.10:5124->40.1.1.26:80, flags:2, Type:800
+II 2017-01-06 16:21:17.070 [pktgen.c:341(pktgen_send_burst)] snd:192.168.80.10:5125->40.1.1.26:80, flags:2, Type:800
+II 2017-01-06 16:21:17.070 [pktgen.c:341(pktgen_send_burst)] snd:192.168.80.10:5126->40.1.1.26:80, flags:2, Type:800

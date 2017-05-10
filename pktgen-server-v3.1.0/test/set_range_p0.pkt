@@ -1,0 +1,52 @@
+# seq <seq#> <portlist> dst-Mac src-Mac dst-IP src-IP/netmask sport dport ipv4|ipv6|vlan udp|tcp|icmp vid pktsize
+#seq 0 all 00:0c:29:d4:7e:45 00:0c:29:09:0a:51 10.1.11.101 10.1.11.107/32 8083 80 ipv4 tcp 0 512
+#set all seqCnt 1
+#set mac 0 00:0C:29:09:0A:47
+#set mac 1 00:0c:29:09:0a:51
+
+vlanid 0 0
+proto tcp 0
+#proto udp 0
+pkt.size start 0 512
+pkt.size min 0 512
+pkt.size max 0 512
+pkt.size inc 0 0
+
+src.ip start 0 192.168.90.10
+src.ip min 0 192.168.90.10
+src.ip max 0 192.168.90.253
+src.ip inc 0 0.0.0.1
+src.port start 0 80
+src.port min 0 80
+src.port max 0 80
+src.port inc 0 0
+
+src.mac start 0 A4:DC:BE:18:75:B3
+src.mac min 0 A4:DC:BE:18:75:B3
+src.mac max 0 A4:DC:BE:18:75:B3
+src.mac inc 0 00:00:00:00:00:00
+
+#dst.ip start 0 10.1.11.101
+#dst.ip min 0 10.1.11.101
+#dst.ip max 0 10.1.11.101
+#dst.ip inc 0 0.0.0.0
+#dst.port start 0 80
+#dst.port min 0 80
+#dst.port max 0 80
+#dst.port inc 0 0
+#dst.mac start 0 00:0c:29:4a:8f:9f
+#dst.mac min 0 00:0c:29:4a:8f:9f
+#dst.mac max 0 00:0c:29:4a:8f:9f
+#dst.mac inc 0 00:00:00:00:00:00
+
+range 0 enable
+garp 0 enable
+garp 0 on
+process 0 enable
+process 0 on
+icmp.echo 0 enable 
+set 0 tx_cycles 100000
+#resp_pkt_size 8192
+resp_type small_pkt
+#mtu 500
+

@@ -1,0 +1,1 @@
+./app/app/x86_64-native-linuxapp-gcc/pktgen_client -c 0x00ff -n 2 -w "0000:05:00.0"  proc-type auto --socket-mem 2048,2048 --file-prefix pgc -- -N -p 0x04 -m "[1].0" -f test/set_range_16.pkt -l debug.txt
